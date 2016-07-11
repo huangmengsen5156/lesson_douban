@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="160" id="KGk-i7-Jjw" customClass="TheaterTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="328" height="159"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_eventlistcell.png" translatesAutoresizingMaskIntoConstraints="NO" id="Onz-8S-fe7">
+                        <rect key="frame" x="0.0" y="0.0" width="328" height="159"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Dd-rt-OSR">
+                        <rect key="frame" x="0.0" y="0.0" width="328" height="159"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="影院" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xW-3r-gtf">
+                                <rect key="frame" x="8" y="16" width="312" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="T7U-pE-Xd4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAF-qr-y3A">
+                                <rect key="frame" x="8" y="74" width="312" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="cgp-dw-h1t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电话" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="av6-4e-RIL">
+                                <rect key="frame" x="8" y="112" width="312" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8c5-GX-ar8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NAF-qr-y3A" firstAttribute="leading" secondItem="9Dd-rt-OSR" secondAttribute="leading" constant="8" id="1TE-hA-oSO"/>
+                            <constraint firstAttribute="trailing" secondItem="NAF-qr-y3A" secondAttribute="trailing" constant="8" id="1pj-di-3sM"/>
+                            <constraint firstItem="2xW-3r-gtf" firstAttribute="top" secondItem="9Dd-rt-OSR" secondAttribute="top" constant="16" id="KOu-28-cLA"/>
+                            <constraint firstItem="2xW-3r-gtf" firstAttribute="leading" secondItem="9Dd-rt-OSR" secondAttribute="leading" constant="8" id="KZz-zL-prB"/>
+                            <constraint firstItem="NAF-qr-y3A" firstAttribute="top" secondItem="2xW-3r-gtf" secondAttribute="bottom" constant="8" id="NVt-mP-5rE"/>
+                            <constraint firstItem="av6-4e-RIL" firstAttribute="leading" secondItem="9Dd-rt-OSR" secondAttribute="leading" constant="8" id="XTn-T5-fIF"/>
+                            <constraint firstAttribute="trailing" secondItem="2xW-3r-gtf" secondAttribute="trailing" constant="8" id="Xd0-mD-WuD"/>
+                            <constraint firstAttribute="trailing" secondItem="av6-4e-RIL" secondAttribute="trailing" constant="8" id="Y1v-1E-WTZ"/>
+                            <constraint firstItem="av6-4e-RIL" firstAttribute="top" secondItem="NAF-qr-y3A" secondAttribute="bottom" constant="8" id="Z5R-06-q3T"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Onz-8S-fe7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Dru-tr-VUW"/>
+                    <constraint firstAttribute="trailing" secondItem="9Dd-rt-OSR" secondAttribute="trailing" id="OXI-9z-SNq"/>
+                    <constraint firstAttribute="bottom" secondItem="Onz-8S-fe7" secondAttribute="bottom" id="Suy-9u-naQ"/>
+                    <constraint firstAttribute="trailing" secondItem="Onz-8S-fe7" secondAttribute="trailing" id="TQ1-CL-XH3"/>
+                    <constraint firstAttribute="bottom" secondItem="9Dd-rt-OSR" secondAttribute="bottom" id="V4u-yS-HfY"/>
+                    <constraint firstItem="Onz-8S-fe7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ca4-ga-6sx"/>
+                    <constraint firstItem="9Dd-rt-OSR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jsH-Jc-hPb"/>
+                    <constraint firstItem="9Dd-rt-OSR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="y0P-MM-QHk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="NAF-qr-y3A" id="cHc-KB-rFl"/>
+                <outlet property="phoneLabel" destination="av6-4e-RIL" id="WnL-Y6-Ow7"/>
+                <outlet property="theaterLabel" destination="2xW-3r-gtf" id="Imc-PM-vkK"/>
+            </connections>
+            <point key="canvasLocation" x="336" y="353"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bg_eventlistcell.png" width="304" height="140"/>
+    </resources>
+</document>

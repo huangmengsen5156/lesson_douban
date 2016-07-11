@@ -1,0 +1,33 @@
+//
+//  allWorking.pch
+//  lesson_douban
+//
+//  Created by lanou3g on 16/6/27.
+//  Copyright © 2016年 lanou3g. All rights reserved.
+//
+
+#ifndef allWorking_pch
+#define allWorking_pch
+
+#import<AFNetworking.h>
+#import <UIImageView+AFNetworking.h>
+#import "RequestUrl.h"
+#import "NetWorkRequest.h"
+
+#import "CommonString.h"
+
+#import <UMSocialData.h>
+#import <UMSocialSnsService.h>
+#import <UMSocialWechatHandler.h>
+#import <UMSocialSinaSSOHandler.h>
+#import <UMSocialQQHandler.h>
+#import <UMSocialSnsPlatformManager.h>
+
+#import "GiFHUD.h"
+
+#import <UIImage+BlurEffects.h>
+#import <UIImageView+BlurAnimation.h>
+
+#import <FMDB.h>
+
+#endif /* allWorking_pch */
